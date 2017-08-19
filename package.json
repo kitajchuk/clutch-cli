@@ -1,0 +1,42 @@
+{
+  "title": "Clutch CLI",
+  "name": "clutch-cli",
+  "description": "Command line tool for Clutch, a modern headless CMS scaffold for Prismic and Contentful.",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init"
+  },
+  "bin": {
+    "clutch": "./clutch.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kitajchuk/clutch-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kitajchuk/clutch-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/kitajchuk/clutch-cli/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Brandon Lee Kitajchuk",
+      "email": "kitajchuk@gmail.com",
+      "url": "http://kitajchuk.com"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "properjs-lager": "^0.1.2",
+    "request": "^2.81.0",
+    "request-progress": "^3.0.0"
+  }
+}
