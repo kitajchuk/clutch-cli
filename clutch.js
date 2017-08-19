@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+
+
 const fs = require( "fs" );
 const cli = require( "cli" );
 const path = require( "path" );
