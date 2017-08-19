@@ -23,4 +23,10 @@ cd my-project
 clutch init
 ```
 
+If you want to use `clutch` to start your project server:
+
+```shell
+clutch start
+```
+
 That's it. Checkout the [clutch](https://github.com/kitajchuk/clutch) project for complete info.
