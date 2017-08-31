@@ -8,7 +8,7 @@ const child_process = require( "child_process" );
 const headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
 };
-const version = "1.0.0";
+const version = "1.0.1";
 const zipFile = path.join( process.cwd(), "clutch.zip" );
 const outPath = path.join( process.cwd(), `clutch-${version}` );
 const releaseTag = `v${version}`;
