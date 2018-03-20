@@ -2,10 +2,11 @@
   "title": "Clutch CLI",
   "name": "clutch-cli",
   "description": "Command line tool for Clutch, a modern headless CMS scaffold for Prismic and Contentful.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "test": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init",
-    "test:global": "rm -rf test ; mkdir test ; cd test ; clutch init"
+    "test:global": "rm -rf test ; mkdir test ; cd test ; clutch init",
+    "test:clean": "rm -rf test"
   },
   "bin": {
     "clutch": "./clutch.js"

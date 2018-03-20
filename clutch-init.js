@@ -39,6 +39,7 @@ module.exports = () => {
                         child_process.execSync( `mv ${outPath}/* ${process.cwd()}` );
                         child_process.execSync( `mv ${outPath}/.eslintrc ${process.cwd()}` );
                         child_process.execSync( `mv ${outPath}/.gitignore ${process.cwd()}` );
+                        child_process.execSync( `mv ${outPath}/.circleci ${process.cwd()}` );
 
                     lager.info( `Clutch: Cleaning up temp files...` );
                         child_process.execSync( `rm -rf ${zipFile}` );
