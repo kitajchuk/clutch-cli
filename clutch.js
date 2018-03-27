@@ -23,8 +23,8 @@ if ( cli.command === "version" ) {
     process.exit();
 
 } else if ( cli.command === "init" ) {
-    require( "./clutch-init" )();
+    require( "./clutch.init" )();
 
 } else if ( cli.command === "start" ) {
-    require( "./clutch-start" )();
+    require( "./clutch.start" )();
 }
