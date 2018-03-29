@@ -14,7 +14,7 @@ cli.setApp( "clutch", json.version );
 
 
 
-cli.parse( null, ["init", "start", "version"] );
+cli.parse( null, ["init", "start", "source", "version"] );
 
 
 
@@ -27,4 +27,7 @@ if ( cli.command === "version" ) {
 
 } else if ( cli.command === "start" ) {
     require( "./clutch.start" )();
+
+} else if ( cli.command === "source" ) {
+    require( "./properjs.install" )();
 }
