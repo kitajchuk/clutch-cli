@@ -23,7 +23,7 @@ module.exports = () => {
     return new Promise(( resolve, reject ) => {
         progress( request.get( releaseUrl, { headers } ) )
             .on( "progress", ( state ) => {
-                lager.info( state.percent );
+                lager.info( String( state.percent ) );
             })
             .on( "error", ( error ) => {
                 lager.error( `Clutch: ${error}` );
