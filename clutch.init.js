@@ -7,7 +7,7 @@ const properjsInstall = require( "./properjs.install" );
 
 module.exports = () => {
     clutchInstall().then(() => {
-        properjsInstall().then(() => {
+        properjsInstall( "main" ).then(() => {
             lager.info( `Clutch: Bootstrapping project` );
                 const node = child_process.spawn( "npm", [
                     "run",

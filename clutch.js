@@ -26,7 +26,12 @@ if ( cli.command === "version" ) {
     process.exit();
 
 } else if ( cli.command === "init" ) {
-    require( "./clutch.init" )();
+    if ( cli.options.src && cli.options.src === "boxen" ) {
+        require( "./boxen.init" )();
+
+    } else {
+        require( "./clutch.init" )();
+    }
 
 } else if ( cli.command === "start" ) {
     require( "./clutch.start" )();
