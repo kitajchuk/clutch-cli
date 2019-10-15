@@ -1,14 +1,12 @@
 {
-  "title": "Clutch CLI",
+  "title": "Clutch",
   "name": "clutch-cli",
-  "description": "Command line tool for Clutch, a modern headless CMS scaffold for Prismic and Contentful.",
-  "version": "0.3.1",
+  "description": "Command line tool for Clutch: An Open-ended Developer SDK for Prismic.io.",
+  "version": "0.2.0",
   "scripts": {
-    "test": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init",
-    "test:boxen": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init -s boxen",
-    "test:global": "rm -rf test ; mkdir test ; cd test ; clutch init",
-    "test:source": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js source",
-    "test:boxen:source": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js source -s boxen",
+    "test:nodir": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init",
+    "test:mkdir": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init my-project",
+    "test:isdir": "rm -rf test ; mkdir test ; cd test ; mkdir my-project ; node ../clutch.js init my-project",
     "test:clean": "rm -rf test"
   },
   "bin": {
@@ -34,12 +32,14 @@
     {
       "name": "Brandon Lee Kitajchuk",
       "email": "bk@kitajchuk.com",
-      "url": "http://kitajchuk.com"
+      "url": "https://kitajchuk.com"
     }
   ],
   "readmeFilename": "README.md",
   "dependencies": {
+    "boxen": "^4.1.0",
     "cli": "^1.0.1",
+    "cli-progress": "^2.1.1",
     "properjs-lager": "^0.1.2",
     "request": "^2.87.0",
     "request-progress": "^3.0.0"
