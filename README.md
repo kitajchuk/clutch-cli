@@ -26,4 +26,5 @@ clutch init my-project
 ```
 
 
+#### Next Steps
 That's it. Checkout the [clutch](https://github.com/kitajchuk/clutch) project for complete info on developing with the SDK.
