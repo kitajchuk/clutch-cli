@@ -21,10 +21,10 @@ const installedText = [
     `Clutch Version ${json.version}`,
     `An Open-ended Developer SDK for Prismic.io.`,
     ``,
-    `You should now install the node_modules:`,
-    `   npm i`,
+    `You should now bootstrap your Clutch app:`,
+    `   npm run bootstrap`,
     ``,
-    `Then you can use the SDKs npm commands:`,
+    `You can use the SDKs npm commands:`,
     `   npm start`,
     `   etc...`
 ];
