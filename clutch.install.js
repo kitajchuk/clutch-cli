@@ -38,6 +38,7 @@ module.exports = ( cli, dir ) => {
                         lager.cache( `Unpacked release ${releaseTag}!` );
                         lager.cache( "Copying SDK files..." );
                             child_process.execSync( `mv ${outPath}/* ${destPath}` );
+                            child_process.execSync( `mv ${outPath}/.circleci ${destPath}` );
                             child_process.execSync( `mv ${outPath}/.eslintrc ${destPath}` );
                             child_process.execSync( `mv ${outPath}/.gitignore ${destPath}` );
                         lager.cache( "Copied SDK files!" );
