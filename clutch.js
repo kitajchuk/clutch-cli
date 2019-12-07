@@ -23,7 +23,7 @@ const displayConfig = {
 };
 const helpText = [
     `Clutch Version ${json.version}`,
-    `An Open-ended Developer SDK for Prismic.io.`,
+    `A Developer SDK for Prismic.io.`,
     ``,
     `Usage:`,
     `   clutch init`,

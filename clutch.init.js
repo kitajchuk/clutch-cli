@@ -19,7 +19,7 @@ const displayConfig = {
 };
 const installedText = [
     `Clutch Version ${json.version}`,
-    `An Open-ended Developer SDK for Prismic.io.`,
+    `A Developer SDK for Prismic.io.`,
     ``,
     `You should now bootstrap your Clutch app:`,
     `   npm run bootstrap`,

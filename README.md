@@ -1,7 +1,7 @@
 clutch-cli
 ==========
 
-> Installs clutch: An Open-ended Developer SDK for Prismic.io.
+> Installs clutch: A Developer SDK for Prismic.io.
 
 
 <img style="width:100%;" src="https://images.squarespace-cdn.com/content/5925b6cb03596e075b56bfe2/1575596648820-5KJZNU062RQ6Q95L9GYG/Kitajchuk_Clutch_Keyimage.jpg?format=2500w&content-type=image%2Fjpeg" />
