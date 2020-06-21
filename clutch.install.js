@@ -17,6 +17,11 @@ const downloadDelay = 500;
 
 module.exports = ( cli, dir ) => {
     const destPath = dir || process.cwd();
+    const dotFiles = [
+        ".eslintrc",
+        ".gitignore",
+        ".circleci"
+    ];
 
     lager.cache( `Downloading clutch release ${releaseTag}...` );
 
@@ -38,8 +43,9 @@ module.exports = ( cli, dir ) => {
                         lager.cache( `Unpacked release ${releaseTag}!` );
                         lager.cache( "Copying SDK files..." );
                             child_process.execSync( `mv ${outPath}/* ${destPath}` );
-                            child_process.execSync( `mv ${outPath}/.eslintrc ${destPath}` );
-                            child_process.execSync( `mv ${outPath}/.gitignore ${destPath}` );
+                            dotFiles.forEach(( dotFile ) => {
+                                child_process.execSync( `mv ${outPath}/${dotFile} ${destPath}` );
+                            });
                         lager.cache( "Copied SDK files!" );
                         lager.cache( "Cleaning up temporary files..." );
                             child_process.execSync( `rm -rf ${zipFile}` );

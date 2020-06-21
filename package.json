@@ -2,7 +2,7 @@
   "title": "Clutch",
   "name": "clutch-cli",
   "description": "Command line tool for Clutch: A Developer SDK for Prismic.1o0",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "test:nodir": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init",
     "test:mkdir": "rm -rf test ; mkdir test ; cd test ; node ../clutch.js init my-project",
